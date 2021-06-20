@@ -1,0 +1,11 @@
+C:\Users\jonas\OneDrive\Documentos\Codes\Design_Patterns\Design_Patterns_Implementation\bin\Debug\netcoreapp2.1\Design_Patterns_Implementation.deps.json
+C:\Users\jonas\OneDrive\Documentos\Codes\Design_Patterns\Design_Patterns_Implementation\bin\Debug\netcoreapp2.1\Design_Patterns_Implementation.runtimeconfig.json
+C:\Users\jonas\OneDrive\Documentos\Codes\Design_Patterns\Design_Patterns_Implementation\bin\Debug\netcoreapp2.1\Design_Patterns_Implementation.runtimeconfig.dev.json
+C:\Users\jonas\OneDrive\Documentos\Codes\Design_Patterns\Design_Patterns_Implementation\bin\Debug\netcoreapp2.1\Design_Patterns_Implementation.dll
+C:\Users\jonas\OneDrive\Documentos\Codes\Design_Patterns\Design_Patterns_Implementation\bin\Debug\netcoreapp2.1\Design_Patterns_Implementation.pdb
+C:\Users\jonas\OneDrive\Documentos\Codes\Design_Patterns\Design_Patterns_Implementation\obj\Debug\netcoreapp2.1\Design_Patterns_Implementation.csprojAssemblyReference.cache
+C:\Users\jonas\OneDrive\Documentos\Codes\Design_Patterns\Design_Patterns_Implementation\obj\Debug\netcoreapp2.1\Design_Patterns_Implementation.csproj.CoreCompileInputs.cache
+C:\Users\jonas\OneDrive\Documentos\Codes\Design_Patterns\Design_Patterns_Implementation\obj\Debug\netcoreapp2.1\Design_Patterns_Implementation.AssemblyInfoInputs.cache
+C:\Users\jonas\OneDrive\Documentos\Codes\Design_Patterns\Design_Patterns_Implementation\obj\Debug\netcoreapp2.1\Design_Patterns_Implementation.AssemblyInfo.cs
+C:\Users\jonas\OneDrive\Documentos\Codes\Design_Patterns\Design_Patterns_Implementation\obj\Debug\netcoreapp2.1\Design_Patterns_Implementation.dll
+C:\Users\jonas\OneDrive\Documentos\Codes\Design_Patterns\Design_Patterns_Implementation\obj\Debug\netcoreapp2.1\Design_Patterns_Implementation.pdb

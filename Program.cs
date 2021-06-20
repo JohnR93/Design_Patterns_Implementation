@@ -1,4 +1,5 @@
 ﻿using System;
+using Design_Patterns_Implementation.Strategy;
 
 namespace Design_Patterns_Implementation
 {
@@ -6,7 +7,17 @@ namespace Design_Patterns_Implementation
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            StrategyClient(new Road());
+            StrategyClient(new Walking());
+            StrategyClient(new PublicTransport());
+        }
+
+        public static void StrategyClient(ITransport transportMode)
+        {
+            Transport transport = new Transport();
+            transport.SetTransport(transportMode);
+            transport.FindRoute();
+
         }
     }
 }
