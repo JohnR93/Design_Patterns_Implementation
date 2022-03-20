@@ -11,6 +11,11 @@ namespace Design_Patterns_Implementation.Builder
             enginePower = 1200; 
             enginePrice = 5500f;
         }
+
+        public override string ToString()
+        {
+            return "Common engine";
+        }
         
     }
 }

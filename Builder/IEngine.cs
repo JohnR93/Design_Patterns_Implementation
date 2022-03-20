@@ -4,5 +4,6 @@ namespace Design_Patterns_Implementation.Builder
     {
         int enginePower { get; set; }
         float enginePrice { get; set; }
+        
     }
 }

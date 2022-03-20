@@ -2,8 +2,12 @@ namespace Design_Patterns_Implementation.Builder
 {
     public class CarBuilder : IBuilder
     {
-        private Car car;
+        public Car car;
 
+        public CarBuilder()
+        {
+            Reset();
+        }
         public void Reset()
         {
             this.car = new Car();
