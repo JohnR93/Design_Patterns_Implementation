@@ -1,5 +1,7 @@
-﻿using System;
+﻿using System.Threading;
+using System;
 using Design_Patterns_Implementation.Builder;
+using Design_Patterns_Implementation.Observer;
 using Design_Patterns_Implementation.Strategy;
 
 namespace Design_Patterns_Implementation
@@ -11,7 +13,8 @@ namespace Design_Patterns_Implementation
             //StrategyClient(new Road());
             //StrategyClient(new Walking());
             //StrategyClient(new PublicTransport());
-            BuilderClient();
+            //BuilderClient();
+            ObserverClient();
         }
         
         public static void StrategyClient(ITransport transportMode)
@@ -35,6 +38,23 @@ namespace Design_Patterns_Implementation
             Console.WriteLine("Sport Car: " + carBuilder.car.Description());
             director.MakeCustomCar(new CustomEngine(6000), 2, true, true);
             Console.WriteLine("Custom Car: " + carBuilder.car.Description());
+        }
+
+        public static void ObserverClient()
+        {
+             Publisher publisher = new Publisher();
+             AppChannel app = new AppChannel();
+             publisher.Subscribe(app);
+             WebChannel web = new WebChannel();
+             publisher.Subscribe(web);
+             PaperChannel paper = new PaperChannel();
+             publisher.Subscribe(paper);
+
+             publisher.Publish("Post one ");
+             Thread.Sleep(5000);
+             publisher.Publish("Post two ");
+             Thread.Sleep(5000);
+             publisher.Publish("Post three ");
         }
     }
 }
