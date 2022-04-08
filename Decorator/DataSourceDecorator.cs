@@ -2,21 +2,21 @@ namespace Design_Patterns_Implementation.Decorator
 {
     public abstract class DataSourceDecorator : IDataSource
     {
-        private IDataSource wrappee;
+        protected IDataSource wrappee;
         
         public DataSourceDecorator(IDataSource wrappee)
         {
             this.wrappee = wrappee;
         }
 
-        public string ReadData()
+        public virtual string ReadData()
         {
-            throw new System.NotImplementedException();
+            return wrappee.ReadData();
         }
 
-        public void WriteData(string data)
+        public virtual void WriteData(string data)
         {
-            throw new System.NotImplementedException();
+            wrappee.WriteData(data);
         }
     }
 }

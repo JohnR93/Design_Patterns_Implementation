@@ -3,6 +3,7 @@ using System;
 using Design_Patterns_Implementation.Builder;
 using Design_Patterns_Implementation.Observer;
 using Design_Patterns_Implementation.Strategy;
+using Design_Patterns_Implementation.Decorator;
 
 namespace Design_Patterns_Implementation
 {
@@ -14,7 +15,8 @@ namespace Design_Patterns_Implementation
             //StrategyClient(new Walking());
             //StrategyClient(new PublicTransport());
             //BuilderClient();
-            ObserverClient();
+            //ObserverClient();
+            DecoratorClient();
         }
         
         public static void StrategyClient(ITransport transportMode)
@@ -55,6 +57,24 @@ namespace Design_Patterns_Implementation
              publisher.Publish("Post two ");
              Thread.Sleep(5000);
              publisher.Publish("Post three ");
+        }
+
+        public static void DecoratorClient()
+        {
+            System.Console.WriteLine("Type a text: Decorator text");
+            //string input = Console.ReadLine();
+            string input  = "Decorator Text";
+            IDataSource data = new FileDataSource("Decorator exemple");
+            data.WriteData(input);
+            System.Console.WriteLine();
+            System.Console.WriteLine(data.ReadData());
+            System.Console.WriteLine("---- Putting compression ----");
+            CompressionDecorator dataCompress = new CompressionDecorator(data);
+            dataCompress.WriteData(data.ReadData());
+            System.Console.WriteLine();
+            System.Console.WriteLine(dataCompress.ReadData());
+
+
         }
     }
 }

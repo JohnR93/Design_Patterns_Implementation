@@ -12,11 +12,12 @@ namespace Design_Patterns_Implementation.Decorator
 
         public string ReadData()
         {
-            throw new System.NotImplementedException();
+            return "Output -> " + data;
         }
 
         public void WriteData(string data)
         {
+            System.Console.Write("Input -> " + data);
             this.data = data;
         }
     }
